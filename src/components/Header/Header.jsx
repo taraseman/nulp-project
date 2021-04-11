@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
+import PropTypes from 'prop-types';
 
 import logo from '../../images/header/Logo.png';
 import burger from '../../images/header/Menu.png';
@@ -28,3 +29,8 @@ export const Header = ({ setNavVisibility, isHeaderBig }) => (
     />
   </header>
 );
+
+Header.propTypes = {
+  setNavVisibility: PropTypes.func.isRequired,
+  isHeaderBig: PropTypes.bool.isRequired,
+};

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './HistorySmall.scss';
 
@@ -15,13 +16,13 @@ export const HistorySmall = (
     <div className="history-small__boxes">
       <div
         className="history-small__box"
-        style={{ 'background-color': color }}
+        style={{ backgroundColor: color }}
       >
         {upBox}
       </div>
       <div
         className="history-small__box"
-        style={{ 'background-color': color }}
+        style={{ backgroundColor: color }}
       >
         {downBox}
       </div>
@@ -32,3 +33,11 @@ export const HistorySmall = (
     </div>
   </div>
 );
+
+HistorySmall.propTypes = {
+  upBox: PropTypes.number.isRequired,
+  downBox: PropTypes.number.isRequired,
+  title: PropTypes.string.isRequired,
+  code: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
+};

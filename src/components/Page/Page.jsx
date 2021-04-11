@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import { PeopleList } from '../PeopleList';
 import { Courses } from '../Courses';
 import './Page.scss';
@@ -28,3 +30,9 @@ export const Page = ({ title, text, listOf }) => (
     }
   </div>
 );
+
+Page.propTypes = {
+  title: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  listOf: PropTypes.string.isRequired,
+};
