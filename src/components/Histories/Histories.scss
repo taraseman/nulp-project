@@ -1,0 +1,17 @@
+.histories {
+  position: relative;
+
+  width: 27%;
+
+  padding-left: 40px;
+
+  &::before {
+    position: absolute;
+    top: 30px;
+    left: 18px;
+    content: " ";
+    height: calc(100% - 60px);
+    width: 1px;
+    background-color: rgb(219, 218, 218);
+  }
+}

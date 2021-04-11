@@ -1,0 +1,56 @@
+.main {
+  height: 716px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+
+  padding-top: 30px;
+  padding-bottom: 56px;
+
+  background-color: #fafafa;
+
+  &__calendar-button {
+    position: absolute;
+    top: 70px;
+    right: 65px;
+  }
+
+  &__up {
+    display: flex;
+    justify-content: space-around;
+
+    margin-bottom: 35px;
+  }
+
+  &__down {
+    display: flex;
+
+    justify-content: space-around;
+  }
+}
+
+.circle-button {
+  z-index: 100;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+  border-color: transparent;
+  font-size: 15px;
+  color: #fff;
+
+  background-color: rgb( 255, 193, 7 );
+  transition: all 1s;
+
+  &:hover {
+    background-color: rgb(216, 102, 9);
+  }
+}
+
+.react-calendar {
+  width: 27%;
+}

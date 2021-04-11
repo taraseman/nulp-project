@@ -1,0 +1,93 @@
+.announcement {
+  width: 61%;
+  min-width: 500px;
+  height: 270px;
+
+  background-color: #fff;
+
+  &__body {
+    height: 210px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 60px;
+
+  padding: 10px 24px;
+  border: 1.5px #eee solid;
+
+  &__title {
+    font-size: 18px;
+    color: rgb( 2, 136, 209 );
+    font-weight: 500;
+  }
+
+  &__text {
+    color: rgb( 3, 169, 244 );
+    font-size: 12px;
+  }
+
+  &__link {
+    margin-left: 25px;
+    padding-left: 5px;
+
+    text-decoration: none;
+    color: rgb( 114, 114, 114 );
+    font-size: 14px;
+
+    transition: all 1s;
+
+    &--right {
+      border-left: 3px rgb( 255, 193, 7 ) solid;
+    }
+
+    &--left {
+      border-left: 3px rgb( 3, 169, 244 ) solid;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.react-calendar {
+  border: 1.5px solid #eee;
+}
+
+.item {
+  display: flex;
+
+  padding-top: 12px;
+
+  height: 60px;
+  border-bottom: 1px #eee solid;
+
+  &--yellow {
+    border-left: 6px rgb( 255, 193, 7 ) solid;
+  }
+
+  &__text {
+    color: rgb(143, 141, 141);
+  }
+
+  &__img {
+    margin: auto;
+  }
+
+  &--blue {
+    border-left: 6px rgb( 3, 169, 244 ) solid;
+  }
+
+  &__viewed {
+    text-align: center;
+    width: 72px;
+  }
+
+}

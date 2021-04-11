@@ -1,0 +1,36 @@
+@import "../../variables.scss";
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  width: calc(100vw - 214.7px);
+  height: 60px;
+
+  background-color: #0288d1;
+
+  &--big {
+    width: 100vw;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 13px;
+    right: 23px;
+  }
+
+  &__button {
+    margin-left: 30px;
+    margin-right: 25px;
+
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+
+  &__window {
+    font-size: 18px;
+    color: $special-white;
+  }
+}

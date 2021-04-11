@@ -1,0 +1,59 @@
+.courses-list {
+  &__item {
+    display: flex;
+
+    border-bottom: 1px #eee solid;
+    border-right: 1px #eee solid;
+    border-left: 1px #eee solid;
+  }
+
+  &__rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    height: 58px;
+    width: 74px;
+
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+  }
+
+  &__diagram {
+    &--yellow {
+      background-color: rgb( 255, 193, 7 );
+    }
+
+    &--blue {
+      background-color: rgb( 38, 198, 218 );
+    }
+
+    &--red {
+      background-color: rgb( 239, 83, 80 );
+    }
+  }
+
+  &__rating-per {
+    color: rgb( 114, 114, 114 );
+    font-size: 12px;
+    line-height: 15px;
+
+    text-align: center;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__text {
+    color: rgb( 114, 114, 114 );
+  }
+
+  &__title {
+    font-size: 14px;
+  }
+}

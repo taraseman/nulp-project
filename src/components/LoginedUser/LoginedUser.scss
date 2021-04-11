@@ -1,0 +1,57 @@
+@import "../../variables.scss";
+
+.logined-user {
+  padding-bottom: 20px;
+
+  &__img {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 17px;
+
+    width: 70px;
+    height: 70px;
+  }
+  &__title {
+    text-align: center;
+
+    color: rgb( 255, 254, 254 );
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  &__location {
+    margin-bottom: 12px;
+
+    display: flex;
+    justify-content: center;
+
+    font-size: 12px;
+    color: rgb( 179, 229, 252 );
+  }
+
+  &__locator {
+    margin-right: 8px;
+  }
+
+  &__button {
+    display: block;
+    margin: auto;
+
+    width: 80px;
+    height: 25px;
+
+    font-size: 12px;
+    color: $special-white;
+    background-color: $nav-bc-color;
+
+    border: 1.2px $special-white solid;
+    border-radius: 10px;
+
+    transition: all 1s;
+
+    &:hover {
+      background-color: $header-color;
+      border-color: transparent;
+    }
+  }
+}
