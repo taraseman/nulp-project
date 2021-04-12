@@ -1,7 +1,8 @@
 @import "../../variables.scss";
 
 .nav {
-  width: 246px;
+  // width: 246px;
+  width: 20%;
   background-color: #03a9f4;
 
   &__link {
@@ -42,7 +43,17 @@
   .nav {
     position: absolute;
     top: 59px;
+    width: 300px;
 
     z-index: 400;
+
+    &__link {
+      font-size: 10px;
+      padding-left: 10px;
+    }
+
+    &__link-img {
+      margin-right: 10px;
+    }
   }
 }

@@ -54,3 +54,29 @@
 .react-calendar {
   width: 27%;
 }
+
+@media screen and (max-width: 1000px) {
+  .main {
+    height: 100%;
+
+    &__up {
+      flex-direction: column;
+    }
+  
+    &__down {
+      flex-direction: column;
+    }
+  }
+
+  .react-calendar {
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .react-calendar {
+    width: 100%;
+  }
+}

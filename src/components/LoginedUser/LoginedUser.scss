@@ -55,3 +55,14 @@
     }
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .logined-user {
+    &__location {
+      margin-bottom: 12px;
+      p {
+        font-size: 8px;
+      }
+    }
+  }
+}

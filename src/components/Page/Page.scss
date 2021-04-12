@@ -30,3 +30,10 @@
     right: 10px;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .page {
+    width: 80%;
+    margin: auto;
+  }
+}
