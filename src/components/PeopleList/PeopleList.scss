@@ -12,6 +12,10 @@
     border-left: 1px #eee solid;
 
     background-color: #fff;
+
+    &--unread {
+      border-left: 4px solid rgb( 244, 81, 30 );
+    }
   }
 
   &__img {
@@ -67,4 +71,9 @@
       background-color: rgb( 244, 81, 30 );
     }
   }
+}
+
+.react-calendar__tile--now {
+  background-color: #03a9f4;
+  padding: 0;
 }

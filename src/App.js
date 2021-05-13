@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import classNames from 'classnames';
 import { Route, Switch } from 'react-router-dom';
 import { Nav } from './components/Nav';
 import { Header } from './components/Header';
@@ -17,7 +18,12 @@ export const App = () => {
   return (
     <div className="app">
       {isNavVisible && <Nav />}
-      <div>
+      {/* <div className="app__content"> */}
+      <div
+        className={classNames(
+          'app__content', { 'app__big-content': !isNavVisible },
+        )}
+      >
         <Header
           setNavVisibility={setNavVisibility}
           isHeaderBig={!isNavVisible}

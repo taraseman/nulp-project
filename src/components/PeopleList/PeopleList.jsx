@@ -15,7 +15,9 @@ export const PeopleList = () => (
   <ul className="people-list">
     {people.map(person => (
       <li
-        className="people-list__item"
+        className={classNames(
+          'people-list__item', { 'people-list__item--unread': !person.opened },
+        )}
         key={person.id}
       >
         <div className="people-list__img">

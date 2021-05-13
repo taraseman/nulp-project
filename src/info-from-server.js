@@ -71,28 +71,32 @@ export const people = [
     name: 'Mr. Sheldon Cooper',
     message: 'What is wrong with your homework?',
     online: true,
-    whenWasLastTime: 'Just now'
+    whenWasLastTime: 'Just now',
+    opened: false,
   },
   {
     id: 1,
     name: 'Jason Bourne',
     message: `Hey dude! What's the plan?`,
     online: false,
-    whenWasLastTime: '2 hours ago'
+    whenWasLastTime: '2 hours ago',
+    opened: true,
   },
   {
     id: 2,
     name: 'Mr. Barney Stinson',
     message: `Have you tried my formula?`,
     online: true,
-    whenWasLastTime: '1 day ago'
+    whenWasLastTime: '1 day ago',
+    opened: true,
   },
   {
     id: 3,
     name: 'Jesse Pinkman',
     message: `I finished it 2 days ago`,
     online: true,
-    whenWasLastTime: '1 day ago'
+    whenWasLastTime: '1 day ago',
+    opened: true,
   },
 ];
 

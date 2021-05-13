@@ -1,3 +1,9 @@
 .app {
   display: flex;
+  &__content {
+    width: 90%;
+  }
+  &__big-content {
+    width: 100%;
+  }
 }
